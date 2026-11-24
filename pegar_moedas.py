@@ -12,7 +12,6 @@ def conversoes_disponiveis():
     conversoes = dic_conversoes["xml"]
     dic_conversoes_disponiveis = {}
     for par_conversao in conversoes:
-        "EUR-VEF"
         moeda_origem, moeda_destino = par_conversao.split("-")
         if moeda_origem in dic_conversoes_disponiveis:
             dic_conversoes_disponiveis[moeda_origem].append(moeda_destino)
