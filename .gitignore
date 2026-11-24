@@ -1,0 +1,13 @@
+# Ambientes virtuais
+ambiente-dev/
+.venv/
+
+# Arquivos Python
+__pycache__/
+*.py[cod]
+
+# Arquivos de configuração sensíveis
+.env
+
+# Configurações de editores
+.vscode/
