@@ -25,7 +25,7 @@ texto_moeda_destino = customtkinter.CTkLabel(janela, text="Selecione a moeda de 
 def carregar_moedas_destino(moeda_selecionada):
     lista_moedas_destino = dic_conversoes_disponiveis[moeda_selecionada]
     campo_moeda_destino.configure(values=lista_moedas_destino)
-    campo_moeda_destino.set(lista_moedas_destino[0])  # Seleciona a primeira moeda da lista como padrão
+    campo_moeda_destino.set(lista_moedas_destino[0]) # Seleciona a primeira moeda da lista como padrão
 
 campo_moeda_origem = customtkinter.CTkOptionMenu(janela, values=list(dic_conversoes_disponiveis.keys()),
                                                  command=carregar_moedas_destino)
