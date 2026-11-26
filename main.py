@@ -9,14 +9,14 @@ from pegar_moedas import nomes_moedas, conversoes_disponiveis
 from pegar_cotacao import pegar_cotacao_moeda
 # criar e configurar a janela principal
 customtkinter.set_appearance_mode("dark")
-customtkinter.set_appearance_mode("dark-blue")
+customtkinter.set_default_color_theme("dark-blue")
 
 janela = customtkinter.CTk()
-janela.geometry("500x500")
+janela.geometry("450x550")
 
 dic_conversoes_disponiveis = conversoes_disponiveis()
 
-dic_conversoes_disponiveis["USD"] = ["BRL", "CAD", "BTC", "AUD"]
+# dic_conversoes_disponiveis["USD"] = ["BRL", "CAD", "BTC", "AUD"]
 # criar os botões, textos e outros elementos da interface
 titulo = customtkinter.CTkLabel(janela, text="Conversor de Moedas", font=("", 20))
 texto_moeda_origem = customtkinter.CTkLabel(janela, text="Selecione a moeda de origem:")
@@ -55,7 +55,7 @@ for codigo_moeda in moedas_disponiveis:
 titulo.pack(padx=10, pady=10)
 texto_moeda_origem.pack(padx=10, pady=10)
 campo_moeda_origem.pack(padx=10)
-texto_moeda_destino.pack(padx=10, pady=3)
+texto_moeda_destino.pack(padx=10, pady=10)
 campo_moeda_destino.pack(padx=10, pady=10)
 botao_converter.pack(padx=10, pady=10)
 texto_cotacao_moeda.pack(padx=10, pady=10)
